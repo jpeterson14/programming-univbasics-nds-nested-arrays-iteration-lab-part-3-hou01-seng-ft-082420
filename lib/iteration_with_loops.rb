@@ -5,9 +5,10 @@ def join_nested_strings(src)
   new_array = []
   while row_index < src.count do 
     element_index = 0 
+    empty = ""
     while element_index < src[row_index].count do 
       if src[row_index][element_index] == src[row_index][element_index].to_s 
-      new_array = src[row_index][element_index]
+       new array = empty << src[row_index][element_index]
   end
       element_index += 1 
     end 
