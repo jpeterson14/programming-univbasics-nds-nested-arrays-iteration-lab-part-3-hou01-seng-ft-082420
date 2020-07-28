@@ -5,15 +5,15 @@ def join_nested_strings(src)
   new_array = []
   while row_index < src.count do 
     element_index = 0 
-    empty = ""
     while element_index < src[row_index].count do 
       if src[row_index][element_index] == src[row_index][element_index].to_s 
-      empty = src[row_index][element_index]
+      empty = src[row_index][element_index] += 
+      src[row_index][element_index]
   end
   new_array << empty
       element_index += 1 
     end 
     row_index += 1 
   end 
-  new_array.uniq.join(" ")
+  new_array
 end
