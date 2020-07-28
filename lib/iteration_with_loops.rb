@@ -15,5 +15,5 @@ def join_nested_strings(src)
     end 
     row_index += 1 
   end 
-  new_array.uniq.delete_at(2)
+  new_array.uniq.join
 end
